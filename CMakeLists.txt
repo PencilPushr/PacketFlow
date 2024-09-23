@@ -22,6 +22,6 @@ file (GLOB SOURCE_FILES CONFIGURE_DEPENDS
 			"Source*.h"
 )
 
-#this is a change
+#a change
 # Add source to this project's library.
 add_executable(${PROJECT_NAME} ${SOURCE_FILES})
