@@ -13,20 +13,14 @@ set(PROJECT_VERSION_PATCH 0)
 
 set(PROJECT_VERSION "${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}.${PROJECT_VERSION_PATCH}")
 
-include_directories( "src" )
-include_directories( "util" )
+include_directories( "Source" )
 
 file (GLOB SOURCE_FILES CONFIGURE_DEPENDS
 		"*.cpp"
 		"*.h"
-			"src/*.cpp"
-			"src/*.h"
+			"Source*.cpp"
+			"Source*.h"
 )
-
-#file (GLOB_RECURSE ce303_files CMAKE_CONFIGURE_DEPENDS
-#		"Src/CE303/*.cpp"
-#		"Src/CE303/*.h"
-#)
 
 # Add source to this project's library.
 add_executable(${PROJECT_NAME} ${SOURCE_FILES})
